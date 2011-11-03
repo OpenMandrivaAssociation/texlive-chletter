@@ -1,3 +1,9 @@
+# revision 20060
+# category Package
+# catalog-ctan /macros/latex/contrib/chletter
+# catalog-date 2010-10-11 07:24:02 +0200
+# catalog-license lppl
+# catalog-version 2.0
 Name:		texlive-chletter
 Version:	2.0
 Release:	1
@@ -48,6 +54,7 @@ it is used with the chextras package.
 #- source
 %doc %{_texmfdistdir}/source/latex/chletter/chletter.dtx
 %doc %{_texmfdistdir}/source/latex/chletter/chletter.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ it is used with the chextras package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
