@@ -6,7 +6,7 @@
 # catalog-version 2.0
 Name:		texlive-chletter
 Version:	2.0
-Release:	7
+Release:	8
 Summary:	Class for typesetting letters to Swiss rules
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/chletter
