@@ -1,19 +1,13 @@
-# revision 20060
-# category Package
-# catalog-ctan /macros/latex/contrib/chletter
-# catalog-date 2010-10-11 07:24:02 +0200
-# catalog-license lppl
-# catalog-version 2.0
 Name:		texlive-chletter
-Version:	2.0
-Release:	11
+Version:	20060
+Release:	1
 Summary:	Class for typesetting letters to Swiss rules
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/chletter
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.r20060.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.doc.r20060.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.source.r20060.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ limited to letters and may be used as a generic document class;
 it is used with the chextras package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,25 +41,11 @@ it is used with the chextras package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0-2
-+ Revision: 750161
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.0-1
-+ Revision: 718056
-- texlive-chletter
-- texlive-chletter
-- texlive-chletter
-- texlive-chletter
-- texlive-chletter
-
