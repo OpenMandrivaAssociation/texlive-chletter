@@ -5,9 +5,9 @@ Summary:	Class for typesetting letters to Swiss rules
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/chletter
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.r20060.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.doc.r20060.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.source.r20060.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
