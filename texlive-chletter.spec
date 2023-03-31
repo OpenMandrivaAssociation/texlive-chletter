@@ -1,6 +1,6 @@
 Name:		texlive-chletter
 Version:	20060
-Release:	1
+Release:	2
 Summary:	Class for typesetting letters to Swiss rules
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/chletter
