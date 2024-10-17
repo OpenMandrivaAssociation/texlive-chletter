@@ -3,7 +3,7 @@ Version:	20060
 Release:	2
 Summary:	Class for typesetting letters to Swiss rules
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/chletter
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/chletter
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chletter.doc.r%{version}.tar.xz
